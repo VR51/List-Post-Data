@@ -1,0 +1,112 @@
+table.vr51-lpd {
+	background-color: #fff;
+}
+
+table.vr51-lpd th {
+	vertical-align:top;
+	background-color: #efefef
+}
+
+table.vr51-lpd tr {
+	vertical-align:middle;
+	cursor: pointer;
+}
+
+table.vr51-lpd td {
+	font-size:12px;
+}
+
+table.vr51-lpd tr:nth-of-type(odd) {
+	background-color:#fefefe;
+}
+
+table.vr51-lpd tr:nth-of-type(even) {
+	background-color:#fbfbfb;
+}
+
+table.vr51-lpd .details {
+	display:none;
+}
+
+table.vr51-lpd .details .header {
+	position:sticky;
+	top:0;
+	left:0;
+	width:100%;
+	padding: 2px 0;
+	border-bottom:1px solid #000;
+	background-color: #0b7ace;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight:700;
+	font-size: 14px;
+}
+
+table.vr51-lpd .details .header span {
+	display:inline-block;
+	width: 49%;
+	margin:auto;
+}
+
+table.vr51-lpd .details .header span.divider {
+	display:inline-block;
+	width: 2%;
+	margin:auto;
+}
+
+table.vr51-lpd .details .header div.counts {
+	display:block;
+	text-align:left;
+}
+
+table.vr51-lpd .details .header div.counts .count {
+	display:inline-block;
+	padding:0 4px;
+	border:1px solid #efefef;
+	border: 1px 0 1px 0;
+	width:auto;
+	min-width: 53px;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+table.vr51-lpd .details .header div.counts .count:nth-of-type(odd) {
+	background-color: #efefef;
+	color: #0b7ace;
+}
+
+table.vr51-lpd .details .header div.counts .count:nth-of-type(even) {
+	
+}
+
+table.vr51-lpd tr:hover .details,
+table.vr51-lpd tr .details.show {
+	display:block;
+	position: absolute;
+	margin:12px -9px;
+	padding:0;
+	font-size:11px;
+	background-color: #0b7ace;
+	color:#fff;
+	border:1px solid #000;
+	height: 300px;
+	min-width:96%;
+	max-width:90%;
+	overflow-y:scroll;
+	overflow-x:auto;
+	z-index:1;
+}
+
+table.vr51-lpd tr .details.show {
+	cursor: move;
+	min-width:460px;
+	max-width:none;
+}
+
+table.vr51-lpd tr .details.show.highlight {
+	opacity: 0.99;
+}
+
+table.vr51-lpd tr .details.show.highlight .header {
+	background-color: #2ab7b7!important;
+}
