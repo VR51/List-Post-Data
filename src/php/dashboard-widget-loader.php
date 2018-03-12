@@ -2,6 +2,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+/**
+* Register admin only scripts and styles then request WordPress loads them.
+**/
+
 function vr51_lpd_enqueue_dashboard_scripts_styles() {
 	wp_register_style( 'vr51-lpd-dashboard-widget', PLUGIN_URL . 'src/css/dashboard-widget.css' );
 	wp_enqueue_style( 'vr51-lpd-dashboard-widget' );
@@ -14,7 +18,17 @@ function vr51_lpd_enqueue_dashboard_scripts_styles() {
 }
 add_action( 'admin_enqueue_scripts', 'vr51_lpd_enqueue_dashboard_scripts_styles', 100 );
 
-require_once( PLUGIN_PATH . 'src/templates/dashboard-widget.php' );
+/**
+*	Load the template for the dashboard widget
+**/
+
+function vr51_lpd_dashboard_widget() {
+	require_once( PLUGIN_PATH . 'src/templates/dashboard-widget.php' );
+}
+
+/**
+*	Feed the dashboard widget template into the actual widget.
+**/
 
 function vr51_lpd_dasboard_widget() {
 	wp_add_dashboard_widget(

@@ -26,6 +26,7 @@ table.vr51-lpd tr:nth-of-type(even) {
 
 table.vr51-lpd .details {
 	display:none;
+	color: #fff;
 }
 
 table.vr51-lpd .details .header {
@@ -109,4 +110,13 @@ table.vr51-lpd tr .details.show.highlight {
 
 table.vr51-lpd tr .details.show.highlight .header {
 	background-color: #2ab7b7!important;
+}
+
+table.vr51-lpd .body {
+	padding: 5px;
+}
+
+table.vr51-lpd .body h3 {
+	text-transform:uppercase;
+	color: #fff;
 }

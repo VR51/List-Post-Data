@@ -1,0 +1,11 @@
+title
+editor
+author
+thumbnail
+excerpt
+trackbacks
+custom-fields
+comments
+revisions
+page-attributes
+post-formats

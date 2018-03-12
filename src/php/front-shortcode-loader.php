@@ -2,6 +2,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+/**
+* Register frontend only scripts and styles then request WordPress loads them.
+**/
+
 function vr51_lpd_enqueue_front_scripts_styles() {
 		wp_register_style( 'vr51-lpd-shortcode', PLUGIN_URL . 'src/css/front-shortcode.css' );
 		wp_enqueue_style( 'vr51-lpd-shortcode' );
@@ -14,6 +18,17 @@ function vr51_lpd_enqueue_front_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'vr51_lpd_enqueue_front_scripts_styles', 100 );
 
-require_once( PLUGIN_PATH . 'src/templates/front-shortcode.php' );
+/**
+*	Load the template for the frontend shortcode
+**/
+
+function vr51_lpd_shortcode() {
+	require_once( PLUGIN_PATH . 'src/templates/front-shortcode.php' );
+}
+
+/**
+* Register the shortcode
+**/
+
 add_shortcode('lpd','vr51_lpd_shortcode');
 
