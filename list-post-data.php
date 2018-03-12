@@ -10,8 +10,8 @@ Plugin URI: https://journalxtra.com/
 Description: See and display information about all post types registered for a site. Information about post types is displayed in the admin Dashboard and in the List Post Data admin page (LPD). The shortcode [lpd] can be used to display post data in any page or post. Table rows can be clicked to make the deep data box sticky. Data boxes can be dragged around the screen.
 Requires at least: 4.0.0
 Tested up to: 4.9.4
-Stable tag: 1.0.0
-Version: 1.0.0
+Stable tag: 1.0.1
+Version: 1.0.1
 License: GPL3
 */
 ?>
