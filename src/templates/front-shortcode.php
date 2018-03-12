@@ -53,7 +53,7 @@ foreach ( $post_types as $post_type ) {
 	$taxonomy_terms_raw = get_object_taxonomies( $post_type->name, 'names' );
 	foreach ($taxonomy_terms_raw as $tax) {
 		$term = get_terms( "$tax" );
-		$terms_raw[$tax] = "$term";
+		$terms_raw[$tax] = $term;
 	}
 	
 	// Get nice list of terms used in each taxonomy
